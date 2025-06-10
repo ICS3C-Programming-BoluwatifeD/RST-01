@@ -8,9 +8,9 @@ import stage
 
 
 def game_scene():
-    #this function is the main game scene
+    # this function is the main game scene
 
-    #image banks for circuitPython
+    # image banks for circuitPython
     image_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
     image_bank_sprites = stage.Bank.from_bmp16("space_aliens.bmp")
 
@@ -20,7 +20,7 @@ def game_scene():
 
     ship = stage.Sprite(image_bank_sprites, 5, 75, 66)
 
-    #create a stage for the background to show up on
+    # create a stage for the background to show up on
     #  and set the frame rate to 60fps
     game = stage.Stage(ugame.display, 60)
     # set the layers, items show up in folder
@@ -33,14 +33,13 @@ def game_scene():
     while True:
         # get user input
 
-        #update game logic
+        # update game logic
 
         # redraw sprites
         game.render_block()
         game.render_sprites([ship])
         game.tick()
-    
+
+
 if __name__ == "__main__":
     game_scene()
-    
-    
