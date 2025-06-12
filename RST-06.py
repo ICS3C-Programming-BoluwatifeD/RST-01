@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # Created By: Boluwatife Dada
 # Date: May 22, 2025
+# This program is the "space Aliens" program on the pybadge
+
 
 
 import stage
@@ -20,7 +22,7 @@ def game_scene():
     select_button = constants.button_state["button_up"]
 
     # Prepare sound
-    pew_sound = open("pew.wav", "rb")
+    pew_sound = open("pew.wav", "r  b ")
     sound = ugame.audio
     sound.stop()
     sound.mute(False)
